@@ -16,7 +16,10 @@ on:
           refered by the tag `v3.0.2`, it would be : git+https://github.com/huggingface/transformers@v3.0.2'
         required: true
         type: string
-
+permissions:
+  pull-requests: write
+  contents: write
+  
 jobs:
   update:
     runs-on: ubuntu-latest
